@@ -100,6 +100,7 @@ div#mmap   {
 /* Base Map */
 #rage_css_map {
 	height: auto;
+	max-height: 475px;
 	max-width: 750px;
 	position:relative;
 }
@@ -509,6 +510,7 @@ ul#city_list{
   margin: 0px;
   border: 0px;
   padding: 0px;
+  height:0;
 }
 ul#city_list li {
   list-style-type: none;
