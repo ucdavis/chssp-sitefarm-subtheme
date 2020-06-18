@@ -1,3 +1,11 @@
+// Add custom jQuery or Javascript here
+// https://www.drupal.org/docs/8/api/javascript-api/javascript-api-overview
+(function ($, Drupal) {
+  "use strict";
+  
+  Drupal.behaviors.customBehavior = {
+    attach: function (context, settings) {
+		
 $( document ).ready( function(){
 
 var content = $("#mainContent").html();
@@ -398,3 +406,8 @@ function clearTextBoxStyles(){
 
 // end $( document ).ready(function() {
 });
+    }
+  };
+  
+})(jQuery, Drupal);
+
