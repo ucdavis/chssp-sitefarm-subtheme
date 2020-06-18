@@ -10,8 +10,9 @@ global-styles:
 map-styles:
   css:
     theme:
-      css/calhist.css: {}
       https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css: {type:external}
+      css/calhist.css: {}
+      
 
   js:
     js/calhist.js: {}
