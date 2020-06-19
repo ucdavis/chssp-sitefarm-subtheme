@@ -42,7 +42,7 @@ function sf1subtheme_preprocess_node(array &$variables) {
 	
   $nid = $variables['node']->id();
   if($nid == '806') {
-    $variables['#attached']['library'][] = 'sf1subtheme/map-styles';
+	  print "hello";
   }
   // Add a class to all Teaser view modes
 
