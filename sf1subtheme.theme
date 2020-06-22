@@ -40,10 +40,10 @@ function sf1subtheme_preprocess_block(array &$variables) {
  */
 function sf1subtheme_preprocess_node(array &$variables) {
 	
-  $nid = $variables['node']->id();
+ /* $nid = $variables['node']->id();
   if($nid == '806') {
 	  print "hello";
-  }
+  } */
   // Add a class to all Teaser view modes
 
 //  if ($variables['view_mode'] == 'teaser') {
@@ -58,11 +58,13 @@ function sf1subtheme_preprocess_node(array &$variables) {
   }
 } */
 
+
 /**
  * Implements hook_theme_suggestions_node_alter().
  */
 function sf1subtheme_theme_suggestions_node_alter(array &$suggestions, array $variables) {
   // Use a custom template for all node teasers
+  
 
 //  if ($variables['elements']['#view_mode'] == "teaser") {
 //    $suggestions[] = 'custom_template_name';

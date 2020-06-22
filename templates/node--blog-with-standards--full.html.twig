@@ -1,0 +1,39 @@
+{% extends "node.html.twig" %}
+
+{#
+/**
+ * @file
+ * Theme override for a node sf-article defualt display
+ *
+ * Available variables:
+ * - Look in the node.html.twig file for available variables.
+ */
+#}
+{% block submitted %}{% endblock %}
+
+{% block content %}
+<div{{ content_attributes.addClass('node__content') }}>
+  {{ content.field_sf_primary_image }}
+
+  <div class="social-share">
+    {{ content.sharemessage__sf_social_share_buttons }}
+  </div>
+
+  <footer class="node__meta">
+    <div{{ author_attributes.addClass('node__submitted meta-info') }}>
+      {{ date }}
+    </div>
+    <div class="byline u-space-bottom">
+      {% if node.uid.value[0].target_id != 0 %}
+        {% trans %}Posted by {{ author_name }}{% endtrans %}
+      {% endif %}
+    </div>
+    {{ metadata }}
+  </footer>
+
+  {{ content|without(
+    'field_sf_primary_image',
+    'sharemessage__sf_social_share_buttons'
+  ) }}
+</div>
+{% endblock %}

@@ -6,14 +6,3 @@ global-styles:
 
   js:
     js/scripts.js: {}
-
-map-styles:
-  css:
-    theme:
-      css/calhist.css: {}
-      
-
-  js:
-    js/calhist.js: {}
-    js/jstween-1.1.js: {}
-    https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js: {type:external}
